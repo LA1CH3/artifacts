@@ -22,7 +22,6 @@
     <!-- Add your site or application content here -->
     <div class="header" ng-cloak="">
       <div class="navbar navbar-default" role="navigation">
-        <div class="container">
           <div class="navbar-header">
 
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
@@ -39,11 +38,12 @@
 
             <ul class="nav navbar-nav">
               <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/submit">Submissions</a></li>
+              <li><a ng-show-auth ng-href="#/submit">Submissions</a></li>
+              <li><a ng-hide-auth ng-href="#/login">Login</a></li>
+              <li><a ng-show-auth ng-href="#/account">Account</a></li>
               <!-- //angularfire -->
             </ul>
           </div>
-        </div>
       </div>
     </div>
 
@@ -51,7 +51,7 @@
 
     <div class="footer">
       <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team and Firebase</p>
+        <p><span class="glyphicon glyphicon-copyright-mark"></span> Artifacts 2015</p>
       </div>
     </div>
 

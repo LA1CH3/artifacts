@@ -17,7 +17,8 @@ angular.module('angularApp')
 
   	$scope.item = {
   		img: 'http://',
-  		url: 'http://'
+  		url: 'http://',
+  		title: ''
   	};
 
   	$scope.addItem = function(){
@@ -26,7 +27,8 @@ angular.module('angularApp')
 
   		$scope.item = {
   			img: 'http://',
-  			url: 'http://'
+  			url: 'http://',
+  			title: ''
   		};
 
   	};

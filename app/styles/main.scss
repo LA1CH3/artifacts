@@ -14,26 +14,8 @@ body {
   padding: 0;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
+.navbar {
+  margin-bottom: 0;
 }
 
 /* Custom page footer */
@@ -58,9 +40,24 @@ body {
   }
 }
 
+/* Basic Masonry Stuff */
+.masonry-brick {
+  width: 50%;
+  @media screen and (min-width:480px){
+    width: 33.33333%;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 20%;
+  }
+  img {
+    width: 100%;
+  }
+}
+
 /* Supporting marketing content */
 .marketing {
   margin: 40px 0;
+  color: orange;
 
   p + h4 {
     margin-top: 28px;
@@ -79,10 +76,6 @@ body {
   .footer {
     padding-left: 0;
     padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
   }
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
