@@ -1,12 +1,15 @@
-# angular
+# artifacts
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 1.0.0.
+https://torrid-inferno-8842.firebaseapp.com/
 
-## Build & development
+Basic webapp for purchasing cool and unique art pieces in a ridiculously easy fashion. Click on what catches your eye and buy. Simple as that. 
 
-Run `grunt` for building and `grunt serve` for preview.
+## Build
 
-## Testing
+Built with Angular & Firebase. 
 
-Running `grunt test` will run the unit tests with karma.
+## Grunt Notes
+
+`grunt serve` will run dev mode with livereload and compass out of "app" folder. 
+
+`grunt` will build prod into "dist" folder.
