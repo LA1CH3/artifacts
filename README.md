@@ -13,3 +13,5 @@ Built with Angular & Firebase.
 `grunt serve` will run dev mode with livereload and compass out of "app" folder. 
 
 `grunt` will build prod into "dist" folder.
+
+`firebase deploy` will deploy to server.
