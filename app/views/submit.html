@@ -1,11 +1,11 @@
 <div class="container">
 	<form ng-submit="addItem()">
 	  <label for="imgurl">Img URL</label>
-	  <input type="text" id="imgurl" ng-model="item.img"/><br/>
+	  <input type="url" id="imgurl" ng-model="item.img" required /><br/>
 	  <label for="purchaseurl">Purchase URL</label>
-	  <input type="text" id="purchaseurl" ng-model="item.url"/><br/>
+	  <input type="url" id="purchaseurl" ng-model="item.url" required /><br/>
 	  <label for="title">Title</label>
-	  <input type="text" ng-model="item.title"/ id="title"/>
+	  <input type="text" ng-model="item.title"/ id="title" required />
 	  <input type="submit" value="submit">
 	</form>
 </div>

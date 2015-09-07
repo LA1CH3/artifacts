@@ -14,6 +14,8 @@ angular.module('angularApp')
   	var rootRef = new Firebase('https://torrid-inferno-8842.firebaseio.com/');
 	var artRef = rootRef.child('art').limitToLast(25);
 
+	// random an array in place
+
 	// an array of our art items in our firebase
   	$scope.artItems = $firebaseArray(artRef);
 

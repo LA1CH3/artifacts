@@ -65,7 +65,7 @@ angular.module('angularApp')
         templateUrl: 'views/login.html',
         controller: 'LoginCtrl'
       })
-      .when('/submit', {
+      .whenAuthenticated('/submit', {
         templateUrl: 'views/submit.html',
         controller: 'SubmitCtrl'
       })
