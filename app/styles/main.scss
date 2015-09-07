@@ -51,6 +51,30 @@ body {
   }
   img {
     width: 100%;
+    transition: opacity 2s ease-in;
+    &.animated {
+      animation-fill-mode: both;
+      &:nth-child(even){
+        animation-duration: 1s;
+      }
+      &:nth-child(odd){
+        animation-duration: 3s;
+      }
+    }
+  }
+  &.loaded img {
+    @keyframes fadeInUpBig {
+      from {
+        opacity: 0;
+        transform: translate3d(0, 2000px, 0);
+      }
+
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+    animation-name: fadeInUpBig;
   }
 }
 
